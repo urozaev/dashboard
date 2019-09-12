@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Dashboard
+    body
+        main
+            header.header
+                .logo
+
+                form.search(action='#' method='GET')
+                    input.search__field(type="search", name='search-field' value="", size="40", maxlength="50", autocomplete="off", placeholder="Поиск", aria-label="Поиск")
+                    button.search__button(type="submit", value='Поиск')
+                nav.nav
+                    ul.nav__list
+                        li.nav__list-item 
+                            span Dashboard
+                        li.nav__list-item 
+                            span Transfers
+                        li.nav__list-item 
+                            span Payments
+                        li.nav__list-item 
+                            span Recent Transactions
+                        li.nav__list-item 
+                            span Loan
+                        li.nav__list-item 
+                            span Online Support
+
+                .profile
+                    .profile__pic
+                        img(src="", alt="Profile picture")
+                    button.profile__dropdown-button(type='button')
+                        span Cliff Booth
+                    ul.profile__dropdown
+                        li.profile__dropdown-item 
+                        li.profile__dropdown-item
+            .dashboard
+                .dashboard__container
+                aside
+
+            footer
+        
