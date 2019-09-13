@@ -40,22 +40,74 @@ html(lang="en")
                         span Cliff Booth
             .dashboard
                 .balance
-                    .balance__header
-                        h2.balance__title Credit Cards
-                    .balance__body
 
-                    ul.balance__users
-                        li.balance__user
+                .cards
+                    .cards__header
+                        h2.cards__title Credit Cards
+                    .cards__body
+                        ul.cards__list
+                            li.cards__list-item
+                                h3.cards__title Maximum Card
+                                .cards__info
+                                    span.cards__info-title Current Debt
+                                    span 1400.00 TL
+                                .cards__info
+                                    span.cards__info-title Credit Avaliable
+                                    span 8500.00 TL
+                                .cards__action
+                                    .cards__info
+                                        span.cards__info-title Cut off Date
+                                        span.cards__date 13.09.2019
+
+                                    .cards__action-buttons
+                                        button.cards__action-button(type='button')
+                                            span Pay the Debt
+                                        button.cards__action-button(type='button')
+                                            span Activity
+                            li.cards__list-item
+                                h3.cards__title Maximum Card
+                                .cards__info
+                                    span.cards__info-title Current Debt
+                                    span 1400.00 TL
+                                .cards__info
+                                    span.cards__info-title Credit Avaliable
+                                    span 8500.00 TL
+                                .cards__action
+                                    .cards__info
+                                        span.cards__info-title Cut off Date
+                                        span.cards__date 13.09.2019
+
+                                    .cards__action-buttons
+                                        button.cards__action-button(type='button')
+                                            span Pay the Debt
+                                        button.cards__action-button(type='button')
+                                            span Activity
+
+
+                    ul.cards__users
+                        li.cards__user
                             .profile
                                 .profile__pic
                                 .profile__name
                                     span Albert Rusakov
-                            .balance__user-info
-                                .balance__user-statistic
-                                button(type='submit').balance__user-button
-                            
+                            .cards__user-statistic 00.00 TL
+                            button(type='submit').cards__user-button Send
+                        li.cards__user
+                            .profile
+                                .profile__pic
+                                .profile__name
+                                    span Joe Baybik
+                            .cards__user-statistic 00.00 TL
+                            button(type='submit').cards__user-button Send
+                        li.cards__user
+                            .profile
+                                .profile__pic
+                                .profile__name
+                                    span Lyle Beniga
+                            .cards__user-statistic 00.00 TL
+                            button(type='submit').cards__user-button Send
 
-                .cards
+                
                 aside.sidebar
                     .sidebar__box
                         h3.sidebar__title Recurring Payments

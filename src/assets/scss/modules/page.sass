@@ -1,6 +1,7 @@
 $main-bg: #202A34
 $section-bg: #243443
 $element-bg: #5F9CEF
+$body-element-bg: #232D37
 
     
 body
@@ -143,7 +144,80 @@ main
                         padding-top: 4px
                         font-weight: bold
                         font-size: 0.9rem
-               
+
+    .cards
+        width: 32%
+        color: #ffffff
+
+        &__header
+            background-color: $section-bg
+            padding: 1rem
+            border-radius: 5px
+        
+        &__body
+            padding-bottom: 2rem
+
+        &__action
+            border-top: 3px solid $main-bg
+            background-color: $body-element-bg
+
+            &-buttons
+                display: flex
+                justify-content: space-between
+
+            &-button
+                font-size: 0.8rem
+                background-color: transparent
+                color: #ffffff
+                border: 2px solid $element-bg
+                border-radius: 1.7rem
+                width: 40%
+                height: 2.4rem
+
+
+        &__info
+            padding: 0.5rem
+            display: flex
+            align-items: baseline
+            justify-content: space-between
+            background-color: $body-element-bg
+
+            &-title
+                font-size: 0.7rem
+                font-weight: 400
+            
+            span
+                font-weight: 700
+
+
+        &__user
+            display: flex
+            align-items: center
+            justify-content: space-between
+            background-color: $body-element-bg
+            padding: 0.9rem 0.7rem
+            border: 2px solid $main-bg
+            border-radius: 5px
+
+            .profile__name
+                font-size: 0.7rem
+                max-width: 3rem
+
+            &-statistic
+                width: 50%
+                border-bottom: 1px solid #ffffff
+                font-size: 0.7rem
+                text-align: right
+
+            &-info
+                display: flex
+
+            &-button
+                background: none
+                color: $element-bg
+                font-size: 0.7rem
+                cursor: pointer
+
 .footer
     background-color: $main-bg
     padding: 0.67rem
