@@ -11,34 +11,109 @@ html(lang="en")
                 .logo
 
                 form.search(action='#' method='GET')
-                    input.search__field(type="search", name='search-field' value="", size="40", maxlength="50", autocomplete="off", placeholder="Поиск", aria-label="Поиск")
                     button.search__button(type="submit", value='Поиск')
+                    input.search__field(type="search", name='search-field' value="", size="40", maxlength="50", autocomplete="off", placeholder="Search payment, transfers, transactions...", aria-label="Поиск")
                 nav.nav
                     ul.nav__list
                         li.nav__list-item 
-                            span Dashboard
-                        li.nav__list-item 
-                            span Transfers
-                        li.nav__list-item 
-                            span Payments
-                        li.nav__list-item 
-                            span Recent Transactions
-                        li.nav__list-item 
-                            span Loan
-                        li.nav__list-item 
-                            span Online Support
+                            a(href="#0").nav__item-link
+                                span Dashboard
+                        li.nav__list-item
+                            a(href="#0").nav__item-link 
+                                span Transfers
+                        li.nav__list-item
+                            a(href="#0").nav__item-link
+                                span Payments
+                        li.nav__list-item
+                            a(href="#0").nav__item-link
+                                span Recent Transactions
+                        li.nav__list-item
+                            a(href="#0").nav__item-link
+                                span Loan
+                        li.nav__list-item
+                            a(href="#0").nav__item-link
+                                span Online Support
 
                 .profile
                     .profile__pic
-                        img(src="", alt="Profile picture")
-                    button.profile__dropdown-button(type='button')
+                    .profile__name
                         span Cliff Booth
-                    ul.profile__dropdown
-                        li.profile__dropdown-item 
-                        li.profile__dropdown-item
             .dashboard
-                .dashboard__container
-                aside
+                .balance
+                    .balance__header
+                        h2.balance__title Credit Cards
+                    .balance__body
 
-            footer
+                    ul.balance__users
+                        li.balance__user
+                            .profile
+                                .profile__pic
+                                .profile__name
+                                    span Albert Rusakov
+                            .balance__user-info
+                                .balance__user-statistic
+                                button(type='submit').balance__user-button
+                            
+
+                .cards
+                aside.sidebar
+                    .sidebar__box
+                        h3.sidebar__title Recurring Payments
+                        ul.sidebar__bills
+                            li.sidebar__bills-item
+                                .sidebar__date
+                                    span 13 May
+                                .sidebar__description
+                                    span.sidebar__bills-title Utility Bill
+                                    p.sidebar__bills-text Lorem ipsum dolor sit amet dolor sit amet
+                                    span.sidebar__bills-numbers 186.00 TL
+                            li.sidebar__bills-item
+                                .sidebar__date
+                                    span 13 May
+                                .sidebar__description
+                                    span.sidebar__bills-title House Rent
+                                    p.sidebar__bills-text Lorem ipsum dolor sit amet dolor sit amet
+                                    span.sidebar__bills-numbers 2800.00 TL
+                            li.sidebar__bills-item
+                                .sidebar__date
+                                    span 13 May
+                                .sidebar__description
+                                    span.sidebar__bills-title Phone Bill
+                                    p.sidebar__bills-text Lorem ipsum dolor sit amet dolor sit amet
+                                    span.sidebar__bills-numbers 70.00 TL
+                    .sidebar__box
+                        h3.sidebar__title Recent Transactions
+                        ul.sidebar__bills
+                            li.sidebar__bills-item
+                                .sidebar__date
+                                    span 13 May
+                                .sidebar__description
+                                    span.sidebar__bills-title Starbucks
+                                    span.sidebar__bills-numbers 12.00 TL
+                            li.sidebar__bills-item
+                                .sidebar__date
+                                    span 13 May
+                                .sidebar__description
+                                    span.sidebar__bills-title Salary 
+                                    span.sidebar__bills-numbers 12.000 TL
+                            li.sidebar__bills-item
+                                .sidebar__date
+                                    span 13 May
+                                .sidebar__description
+                                    span.sidebar__bills-title CarrefourSA
+                                    span.sidebar__bills-numbers 324.78 TL
+
+
+
+
+            footer.footer
+                ul.footer__list
+                    li.footer__list-item
+                        span BIST 100.1
+                    li.footer__list-item
+                        span BANKS 28.67
+                    li.footer__list-item
+                        span BOOST 84.92
+                    li.footer__list-item
+                        span BUILD 91.11
         
