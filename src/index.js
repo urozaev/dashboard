@@ -1,3 +1,16 @@
+// JQuery
+import 'jquery'
+import 'popper.js'
+
+import 'slick-carousel'
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+
+// Graphs
+import 'chartist'
+// import "_my-chartist-settings.scss";
+import "chartist/dist/scss/chartist.scss";
+
 // JS
 import './js/'
 

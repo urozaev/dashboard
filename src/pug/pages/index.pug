@@ -39,49 +39,92 @@ html(lang="en")
                     .profile__name
                         span Cliff Booth
             .dashboard
-                .balance
+                .dashboard__box
+                    .balance
+                        header.section-header
+                            h2.section-header__title Balance
+                        .balance__graph
+                            .ct-chart.ct-perfect-fourth
+                        footer.balance__footer
+                            ul.balance__footer-list
+                                li.balance__footer-item
+
+
+                        
+
+
+                    .calc
+                        .section-header
+                            h2.section-header__title Loan Calculater
 
                 .cards
-                    .cards__header
-                        h2.cards__title Credit Cards
+                    .section-header
+                        h2.section-header__title Credit Cards
                     .cards__body
                         ul.cards__list
-                            li.cards__list-item
-                                h3.cards__title Maximum Card
-                                .cards__info
-                                    span.cards__info-title Current Debt
-                                    span 1400.00 TL
-                                .cards__info
-                                    span.cards__info-title Credit Avaliable
-                                    span 8500.00 TL
-                                .cards__action
+                            li.cards__list-item 
+                                .cards__image
+                                    img(src="./assets/img/card-1.png", alt="Your card")
+                                .cards__info-box
+                                    h3.cards__name TRIO Rewards Card
                                     .cards__info
-                                        span.cards__info-title Cut off Date
-                                        span.cards__date 13.09.2019
-
-                                    .cards__action-buttons
-                                        button.cards__action-button(type='button')
-                                            span Pay the Debt
-                                        button.cards__action-button(type='button')
-                                            span Activity
-                            li.cards__list-item
-                                h3.cards__title Maximum Card
-                                .cards__info
-                                    span.cards__info-title Current Debt
-                                    span 1400.00 TL
-                                .cards__info
-                                    span.cards__info-title Credit Avaliable
-                                    span 8500.00 TL
-                                .cards__action
+                                        span.cards__info-title Current Debt
+                                        span 1400.00 TL
                                     .cards__info
-                                        span.cards__info-title Cut off Date
-                                        span.cards__date 13.09.2019
+                                        span.cards__info-title Credit Avaliable
+                                        span 8500.00 TL
+                                    .cards__action
+                                        .cards__info
+                                            span.cards__info-title Cut off Date
+                                            span.cards__date 13.09.2019
 
-                                    .cards__action-buttons
-                                        button.cards__action-button(type='button')
-                                            span Pay the Debt
-                                        button.cards__action-button(type='button')
-                                            span Activity
+                                        .cards__action-buttons
+                                            button.cards__action-button(type='button')
+                                                span Pay the Debt
+                                            button.cards__action-button(type='button')
+                                                span Activity
+                            li.cards__list-item
+                                .cards__image
+                                    img(src="./assets/img/card-2.png", alt="Your card") 
+                                .cards__info-box
+                                    h3.cards__name Maximum Card
+                                    .cards__info
+                                        span.cards__info-title Current Debt
+                                        span 1400.00 TL
+                                    .cards__info
+                                        span.cards__info-title Credit Avaliable
+                                        span 8500.00 TL
+                                    .cards__action
+                                        .cards__info
+                                            span.cards__info-title Cut off Date
+                                            span.cards__date 13.09.2019
+
+                                        .cards__action-buttons
+                                            button.cards__action-button(type='button')
+                                                span Pay the Debt
+                                            button.cards__action-button(type='button')
+                                                span Activity
+                            li.cards__list-item
+                                .cards__image
+                                    img(src="./assets/img/card-3.png", alt="Your card") 
+                                .cards__info-box
+                                    h3.cards__name Nicolet Card
+                                    .cards__info
+                                        span.cards__info-title Current Debt
+                                        span 1400.00 TL
+                                    .cards__info
+                                        span.cards__info-title Credit Avaliable
+                                        span 8500.00 TL
+                                    .cards__action
+                                        .cards__info
+                                            span.cards__info-title Cut off Date
+                                            span.cards__date 13.09.2019
+
+                                        .cards__action-buttons
+                                            button.cards__action-button(type='button')
+                                                span Pay the Debt
+                                            button.cards__action-button(type='button')
+                                                span Activity
 
 
                     ul.cards__users
@@ -110,7 +153,8 @@ html(lang="en")
                 
                 aside.sidebar
                     .sidebar__box
-                        h3.sidebar__title Recurring Payments
+                        header.section-header
+                            h2.section-header__title Recurring Payments
                         ul.sidebar__bills
                             li.sidebar__bills-item
                                 .sidebar__date
@@ -134,7 +178,8 @@ html(lang="en")
                                     p.sidebar__bills-text Lorem ipsum dolor sit amet dolor sit amet
                                     span.sidebar__bills-numbers 70.00 TL
                     .sidebar__box
-                        h3.sidebar__title Recent Transactions
+                        header.section-header
+                            h2.section-header__title Recent Transactions
                         ul.sidebar__bills
                             li.sidebar__bills-item
                                 .sidebar__date

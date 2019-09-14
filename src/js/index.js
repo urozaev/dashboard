@@ -1,29 +1,22 @@
-$(".cards__list").slick({
-
-    // normal options...
-    infinite: false,
-  
-    // the magic
-    responsive: [{
-  
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          infinite: true
-        }
-  
-      }, {
-  
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          dots: true
-        }
-  
-      }, {
-  
-        breakpoint: 300,
-        settings: "unslick" // destroys slick
-  
-      }]
+$(document).ready( function() {
+  $(".cards__list").slick({
+      speed: 500,
+      centerMode: true,
+      arrows: true,
+      centerPadding: '0',
+      slidesToShow: 1,
+      dots: false,
+      variableWidth: true,
+      infinite: false,
+      focusOnSelect: true,
+      initialSlide: 1,
   });
+  
+} );
+
+window.addEventListener('load', function() {
+
+
+
+
+})
