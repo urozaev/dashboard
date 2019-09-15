@@ -4,6 +4,7 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css")
         title Dashboard
     body
         main
@@ -40,22 +41,172 @@ html(lang="en")
                         span Cliff Booth
             .dashboard
                 .dashboard__box
-                    .balance
+                    .balance.tabs
                         header.section-header
                             h2.section-header__title Balance
-                        .balance__graph
-                            .ct-chart.ct-perfect-fourth
-                        footer.balance__footer
-                            ul.balance__footer-list
-                                li.balance__footer-item
+                            ul.tabs__caption
+                                li.active TL
+                                li EURO
+                                li USD
+                        .balance__tab.tabs__content.active
+                            .balance__graph
+                                #chart1.ct-chart.ct-perfect-fourth
+                            footer.balance__footer
+                                ul.balance__footer-list
+                                    li.balance__footer-item
+                                        span TL
+                                        .balance__line
+                                            div
+                                    li.balance__footer-item
+                                        span EURO
+                                        .balance__line
+                                            div
+                                    li.balance__footer-item
+                                        span USD
+                                        .balance__line
+                                            div
+                        .balance__tab.tabs__content
+                            .balance__graph
+                                #chart2.ct-chart.ct-perfect-fourth
+                            footer.balance__footer
+                                ul.balance__footer-list
+                                    li.balance__footer-item
+                                        span CHF
+                                        .balance__line
+                                            div
+                                    li.balance__footer-item
+                                        span RUB
+                                        .balance__line
+                                            div
+                                    li.balance__footer-item
+                                        span LYD
+                                        .balance__line
+                                            div
+                        .balance__tab.tabs__content
+                            .balance__graph
+                                #chart3.ct-chart.ct-perfect-fourth
+                            footer.balance__footer
+                                ul.balance__footer-list
+                                    li.balance__footer-item
+                                        span JOD
+                                        .balance__line
+                                            div
+                                    li.balance__footer-item
+                                        span GBP
+                                        .balance__line
+                                            div
+                                    li.balance__footer-item
+                                        span OMR
+                                        .balance__line
+                                            div
 
-
-                        
-
-
-                    .calc
-                        .section-header
+                    .calc.tabs
+                        header.section-header
                             h2.section-header__title Loan Calculater
+                            ul.tabs__caption
+                                li.active Consumer Loan
+                                li Auto Loan
+                                li Mortgage
+                        .calc__tab.tabs__content.active
+                            ul.calc__ranges
+                                li.calc__ranges-item
+                                    .calc__ranges-values
+                                        span Loan Amount
+                                        span.calc__info-value 120.000 TL
+                                    input.calc__ranges-slider-1(type="range")
+                                li.calc__ranges-item
+                                    .calc__ranges-values
+                                        span Term
+                                        span.calc__info-value 96
+                                    input.calc__ranges-slider-1(type="range")
+                                li.calc__ranges-item
+                                    .calc__ranges-values
+                                        span Installment Amount
+                                        span.calc__info-value  TL
+                                    input.calc__ranges-slider-1(type="range")
+                            .calc__info
+                                ul.calc__info-list
+                                    li.calc__info-item
+                                        span Percent
+                                        span.calc__info-value 1.55%
+                                    li.calc__info-item
+                                        span Total Coast
+                                        span.calc__info-value 608.00 TL
+                                    li.calc__info-item
+                                        span Payback
+                                        span.calc__info-value 150.000 TL
+                                .calc__box
+                                    a(href="#0").calc__link
+                                        span Payment Plan
+                                    button.cards__action-button(type='button')
+                                        span Resort
+                        .calc__tab.tabs__content
+                            ul.calc__ranges
+                                li.calc__ranges-item
+                                    .calc__ranges-values
+                                        span Loan Amount 2
+                                        span.calc__info-value 120.000 TL
+                                    input.calc__ranges-slider-2(type="range")
+                                li.calc__ranges-item
+                                    .calc__ranges-values
+                                        span Term 2
+                                        span.calc__info-value 96
+                                    input.calc__ranges-slider-2(type="range")
+                                li.calc__ranges-item
+                                    .calc__ranges-values
+                                        span Installment Amount 2
+                                        span.calc__info-value  TL
+                                    input.calc__ranges-slider-2(type="range")
+                            .calc__info
+                                ul.calc__info-list
+                                    li.calc__info-item
+                                        span Percent
+                                        span.calc__info-value 2.55%
+                                    li.calc__info-item
+                                        span Total Coast
+                                        span.calc__info-value 408.00 TL
+                                    li.calc__info-item
+                                        span Payback
+                                        span.calc__info-value 250.000 TL
+                                .calc__box
+                                    a(href="#0").calc__link
+                                        span Payment Plan
+                                    button.cards__action-button(type='button')
+                                        span Resort
+                        .calc__tab.tabs__content
+                            ul.calc__ranges
+                                li.calc__ranges-item
+                                    .calc__ranges-values
+                                        span Loan Amount 3
+                                        span.calc__info-value 120.000 TL
+                                    input.calc__ranges-slider-3(type="range")
+                                li.calc__ranges-item
+                                    .calc__ranges-values
+                                        span Term 3
+                                        span.calc__info-value 96
+                                    input.calc__ranges-slider-3(type="range")
+                                li.calc__ranges-item
+                                    .calc__ranges-values
+                                        span Installment Amount 3
+                                        span.calc__info-value  TL
+                                    input.calc__ranges-slider-3(type="range")
+                            .calc__info
+                                ul.calc__info-list
+                                    li.calc__info-item
+                                        span Percent
+                                        span.calc__info-value 3.55%
+                                    li.calc__info-item
+                                        span Total Coast
+                                        span.calc__info-value 308.00 TL
+                                    li.calc__info-item
+                                        span Payback
+                                        span.calc__info-value 350.000 TL
+                                .calc__box
+                                    a(href="#0").calc__link
+                                        span Payment Plan
+                                    button.cards__action-button(type='button')
+                                        span Resort
+
 
                 .cards
                     .section-header
@@ -213,4 +364,5 @@ html(lang="en")
                         span BOOST 84.92
                     li.footer__list-item
                         span BUILD 91.11
+script(src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js")
         

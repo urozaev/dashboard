@@ -6,10 +6,12 @@ import 'slick-carousel'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
+import 'rangeslider.js'
+
 // Graphs
-import 'chartist'
-// import "_my-chartist-settings.scss";
-import "chartist/dist/scss/chartist.scss";
+// import 'chartist-webpack'
+// import 'chartist-webpack/dist/chartist.js'
+// import 'chartist-webpack/dist/scss/chartist.scss'
 
 // JS
 import './js/'
