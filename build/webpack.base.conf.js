@@ -10,7 +10,7 @@ const { VueLoaderPlugin } = require('vue-loader')
 const PATHS = {
   src: path.join(__dirname, '../src'),
   dist: path.join(__dirname, '../dist'),
-  assets: 'dist/assets/'
+  assets: 'assets/'
 }
 
 // Pages const for HtmlWebpackPlugin
