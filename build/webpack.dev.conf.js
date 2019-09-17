@@ -19,8 +19,9 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       filename: '[file].map'
     }),
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
     })
   ]
 })

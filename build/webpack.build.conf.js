@@ -1,10 +1,17 @@
+const webpack =  require('webpack')
 const merge = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.conf')
 
 const buildWebpackConfig = merge(baseWebpackConfig, {
   // BUILD config
   mode: 'production',
-  plugins: []
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    })
+  ]
 })
 
 module.exports = new Promise((resolve, reject) => {
