@@ -1,4 +1,5 @@
 // JQuery
+// import $ from 'jquery'
 import 'jquery'
 import 'popper.js'
 
